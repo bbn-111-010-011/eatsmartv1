@@ -1,0 +1,6 @@
+titre : bilan_anuel
+
+C.A : 25 MILLIONS
+NOMBRE DE COMMANDE : 500
+PLAT LE PLUSVENDUS : ANCHOIS
+aymen-eatsmartv1-front
