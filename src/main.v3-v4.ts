@@ -15,7 +15,9 @@ interface ArticleDTO {
   article_id: number;          
   nom: string;                 
   prix: number | string;       
-  description: string;         
+  description: string;   
+  inclus_menus :string;
+
 }
 
 // Cette interface représente les données envoyées au backend
@@ -205,6 +207,13 @@ function afficherArticles(): string {
           <!-- Identifiant de l'article -->
           <p class="article-id">ID : ${article.article_id}</p>
 
+
+          
+          <!-- Description de l'article -->
+          <p>${article.inclus_menus}</p>
+
+          
+
           <!-- Bouton pour ajouter l'article au panier -->
           <button class="btn-order" type="button">Ajouter</button>
         </article>
@@ -236,6 +245,9 @@ function afficherPanier(): string {
 
           <!-- Nom de l'article dans le panier -->
           <span>${article.nom}</span>
+
+          <!-- INCLUS MENU  -->
+          <span>${article.inclus_menus}</span>
 
           <!-- Prix de l'article -->
           <strong>${Number(article.prix).toFixed(2)} €</strong>
